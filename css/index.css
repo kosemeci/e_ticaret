@@ -1,0 +1,256 @@
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+@media (max-width: 636px) {
+    .navbar-fixed {
+        position: static; /* Navbar'ı sabit olmaktan çıkar */
+    }
+    .section{
+        margin-top: 2px !important;
+    }
+    .like_icon {
+        bottom: 110px !important;
+        font-size: 22px  !important; 
+    }
+}
+
+@media (min-width:682px) and (max-width:732px) {
+    .girisCarousel{
+        padding: 2% 4% !important;
+    }
+}
+
+
+.section{
+    margin-top: 170px;
+    padding: 2% 8%;
+}
+.sidebar{
+    margin-top: 3%;
+}
+.sectionRow{
+    margin-top: 4%;
+}
+.sectionRow h5{
+    color:#747d8c;
+    font-weight: bold;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 5px;
+}
+
+.sidebar input[type="radio"] {
+    display: none;
+}
+
+.sidebar label {
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 20px;
+    position: relative;
+    padding-left: 15%;
+}
+
+.sidebar label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+
+.sidebar input[type="radio"]:checked + label:before {
+    background-color: #333;
+}
+
+
+.sectionRow .card-img img{
+    max-width: 395px;
+    max-height: 400px;
+    border-radius: 0% 22% ;
+}
+.card-img-top{
+    max-height: 420px;
+}
+
+
+.sectionRow .card{
+    max-width: 395px;
+    max-height: 505px;
+    border-top: 0;
+    border-radius: 0% 22% 0% 0% ;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.dropbtn {
+    color: #747d8c;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 0%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 240px !important;
+    z-index: 1;
+    border: 1px solid #747d8c;
+}
+.dropdown-content ul li {
+    padding: 4px 0;
+    font-size: 18px;
+}
+.dropdown-content ul {
+    margin-top: 4px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.mobil-section{
+    display: none;
+}
+
+@media (max-width:990px) {
+    .section{
+        display: none;
+    }
+    .mobil-section{
+        display: block !important;
+    }
+    .slide {
+        padding: 0px !important;
+    }
+}
+
+@media (min-width:576px) and (max-width:990px) {
+    .dropbtn{
+        font-size: x-large !important;
+    }
+    .mobil-section{
+        margin-top: 160px  !important;
+    }
+}
+.mobil-section{
+    padding: 2% 4%;
+}
+.mobil-section .row{
+    padding: 2% 4%;
+}
+
+.dropdown-content ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.dropdown-content ul li {
+    padding-left: 20px; 
+    position: relative;
+}
+
+.dropdown-content ul li:before {
+    content: none; 
+}
+
+.dropdown{
+    padding-right: 8%;
+}
+
+.mobil-section .col-12, .mobil-section .col-6{
+    padding: 0px;
+}
+.mobil-section .card-img img{
+    border-radius: 0% 22% ;
+}
+.mobil-section .card{
+    border-radius: 0% 22% 0% 0% ;
+}
+
+.girisCarousel{
+    justify-content: space-around;
+    max-width: max-content;
+}
+
+.carousel-item img {
+    max-height: 100%;
+    width: 80%;
+}
+@media (min-width:700px) {
+    .slide{
+        padding: 0px 18px;
+    }
+}
+
+.like_icon {
+    position: absolute;
+    bottom: 120px;
+    right: 10px;
+    color: #2f3542; /* Beyaz kalp ikonu */
+    font-size: 28px; /* İkon boyutu */
+    cursor: pointer; /* İkona tıklanabilirlik özelliği */
+}
+
+.fix-wp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 50px;
+    color: #12c32f;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.fix-wp-icon:hover{
+    color: #12c32f;
+}
+
+@media (max-width:700px) {
+    .fix-wp-icon{
+        font-size: 30px;
+    }
+}
+.card-text {
+    display: flex;
+    justify-content: flex-start;
+    font-size: large;
+    font-weight: 800;
+  }
+  
+  .old-price {
+    opacity: 0.5;
+    text-decoration: line-through;
+    font-size: small;
+
+  }
+  .card-title {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  @media (max-width:666px) {
+    .price-container{
+        font-size: small;
+    }
+    .old-price {
+        font-size: xx-small;
+    }
+  }
